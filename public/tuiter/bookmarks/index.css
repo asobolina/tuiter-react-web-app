@@ -1,0 +1,86 @@
+.wd-tuit {
+    display: flex;
+
+    margin-bottom: 2px;
+    padding: 10px 15px;
+  }
+  
+  .tweet:hover {
+    background: rgba(0, 0, 0, 0.03);
+    cursor: pointer;
+  }
+  
+  .wd-tuit a {
+    color: #1b94e0;
+    text-decoration: none;
+  }
+  
+  .wd-tuit a:hover {
+    text-decoration: underline;
+  }
+  
+  .wd-author-pic {
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .wd-tuit-title {
+    display: flex;
+  }
+  
+  .wd-author-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: #14171a;
+    margin-right: 5px;
+  }
+  
+  .wd-author-tag {
+    color: #5b7083;
+    font-size: 15px;
+  }
+  
+  .wd-time-stamp {
+    margin-left: 15px;
+    color: #657786;
+  }
+  
+.wd-tuit-main {
+    margin-left: 70px;
+    border-radius: 25px;
+    border: 1px solid lightgrey;
+    margin-bottom: 15px;
+}
+
+.wd-tuit-pic {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    align-self: auto;
+    width: 100%;
+}
+
+.wd-tuit-source {
+    margin-left: 15px;
+}
+
+.wd-tweet-content2 {
+    margin-left: 15px;
+}
+
+.wd-article {
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.wd-tuit-icons {
+    margin-left: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.wd-tuit-icons i,
+.wd-tuit-icons span {
+  margin-right: 5px;
+}
