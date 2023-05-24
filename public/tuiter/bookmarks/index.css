@@ -52,6 +52,7 @@
     border-radius: 25px;
     border: 1px solid lightgrey;
     margin-bottom: 15px;
+    margin-right: 25px;
 }
 
 .wd-tuit-pic {
@@ -83,4 +84,5 @@
 .wd-tuit-icons i,
 .wd-tuit-icons span {
   margin-right: 5px;
+  margin-bottom: 25px;
 }
