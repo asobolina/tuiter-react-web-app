@@ -6,10 +6,19 @@ import NavigationSidebar from "./navigation-sidebar.js";
 import ProfileScreen from "./profile-screen/index.js";
 import WhoToFollowList from "./who-to-follow/index.js";
 import WhoToFollowListItem from "./who-to-follow/who-to-follow-list-item.js";
+import whoReducer from "./reducers/who-reducer";
+import tuitsReducer from "./reducers/tuits-reducer.js";
+import { configureStore } from '@reduxjs/toolkit';
+import {Provider} from "react-redux";
+import Nav from "../nav.js";
+const store = configureStore(
+  {reducer: {who: whoReducer, tuits: tuitsReducer}});
 
 
 function Tuiter() {
     return (
+        <Provider store={store}>
+             <Nav/>
        <div className="row">
         <div className="col-2">
             <NavigationSidebar/>
@@ -29,6 +38,7 @@ function Tuiter() {
                 <WhoToFollowList/>
             </div>
        </div>
+       </Provider>
     );
  }
  export default Tuiter

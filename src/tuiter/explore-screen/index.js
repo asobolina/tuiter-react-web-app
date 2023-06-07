@@ -1,6 +1,6 @@
 import React from "react";
-import TuitSummaryList from "../tuit-summary-list";
-import TuitSummaryItem from "../tuit-summary-list/tuit-summary-item";
+import TuitsList from "../tuits";
+import TuitItem from "../tuits/tuit-item";
 import { AiOutlineSearch } from "react-icons/ai";
 import { GoGear } from "react-icons/go";
 import "./index.css";
@@ -36,7 +36,7 @@ function ExploreScreen() {
        <h1 className="position-absolute wd-nudge-up text-white">
          SpaceX Starship</h1>
      </div>
-        <TuitSummaryList/>
+        <TuitsList/>
     </div> 
     );
    }
