@@ -1,6 +1,6 @@
 import React from "react";
 import TuitsList from "../tuits";
-import TuitItem from "../tuits/tuit-item";
+import TuitItem from "../tuits/tuit-summary-item";
 import { AiOutlineSearch } from "react-icons/ai";
 import { GoGear } from "react-icons/go";
 import "./index.css";

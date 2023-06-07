@@ -1,16 +1,8 @@
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import {useDispatch} from "react-redux";
-import { createTuit, deleteTuit } from '../reducers/tuits-reducer';
+
 import React from "react";
 import ReactDOM from 'react-dom/client';
-
-const dispatch = useDispatch();
-const deleteTuitHandler = (id) => {
-  dispatch(deleteTuit(id));
-}
-
-
-const TuitItem = (
+const TuitSummaryItem = (
  {
    tuit = {
      "userName": "SpaceX",
@@ -40,10 +32,8 @@ const TuitItem = (
         <i className="fas fa-heart fa-lg"></i> {tuit.likes}
       </div>
      </div>
-     <i className="bi bi-x-lg float-end"
-            onClick={() => deleteTuitHandler(tuit._id)}></i>
    </div>
   </li>
  );
 };
-export default TuitItem;
+export default TuitSummaryItem;
